@@ -1,0 +1,71 @@
+*{
+    font-family: "Caveat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #91a1d96f;
+}
+h3{
+    color: #88888b;
+}
+.main {
+    background: linear-gradient(-45deg,#9290C3, #3e4f90, #08717f, #343299);
+    background-size: 400% 400%;
+    animation: bg 10s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gamecontainer{
+    height: 350px;
+    width: 350px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+}
+button{
+    background-color: #1B1A55;
+    color: aliceblue;
+    padding: 1%;
+    border: none;
+    border-radius: 0.5rem;
+}
+.cell{
+    background-color: #2e3558;
+    margin: 5px;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxtext{
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+.cell:hover{
+    background-color: rgba(42, 73, 134, 0.359);
+    border: solid white 1px;
+}
